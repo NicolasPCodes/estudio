@@ -29,4 +29,3 @@ let metroidIndex = juegos.indexOf('Metroid') // CaseSensitive
 console.log({metroidIndex});
 
 
-//
