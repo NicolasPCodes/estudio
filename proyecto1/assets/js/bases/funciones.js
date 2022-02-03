@@ -14,7 +14,8 @@ const saludar2 = function ( nombre ){
 }
 
 
-//funcion de flecha o lambda, estas son mas eficientes que las funsiones tradicionales y evitan problemas con un objeto llamado dis.
+//funcion de flecha o lambda, estas son mas eficientes que las funsiones tradicionales 
+// y evitan problemas con un objeto llamado dis.
 const saludarFlecha = () => {
     console.log('Hola Flecha');
 }

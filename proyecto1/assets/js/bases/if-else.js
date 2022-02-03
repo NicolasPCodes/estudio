@@ -40,5 +40,21 @@ if(dia === 0){
 // tarea es utilizar objetos para imprimir el dia de la semana.
 dia = 3// 0:Domingo, 1: Lunes..... 
 
-// dia de la semana  
-console.log( diaLetras[dia] );
+// dia de la semana utilizando objetos.
+const diaLetras = {
+    0: 'Domingo',
+    1: 'Lunes',
+    2: 'Martes',
+    3: 'Miercoles',
+    4:'Jueves',
+    5:'Viernes',
+    6:'Sabado',
+};
+// dia de la semana utilizando arreglo
+const diaLetras2 = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado',];
+// || esto es un or o un O en español
+// este or se mostraria solo cuando el obj diaLetras sea undefined o null, de lo contrario
+// solo mostrara el resultado del objeto.
+console.log( diaLetras[dia] || 'Día no encontrado');
+// console.log({diaLetras});
+console.log( diaLetras2[dia] || 'Día no encontrado');
