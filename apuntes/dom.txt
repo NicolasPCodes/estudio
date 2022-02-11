@@ -1,0 +1,37 @@
+Es un conjunto de objetos anidados. La idea es tener un acceso dinamico a sus
+elementos para manipularlos. Entre estos elementos podrian entrar el mismo html,
+head, body, div, button, entre otros.
+
+Estas sentencias no funcionara en el servidor, ya que no hay dom.
+
+Para controlar elementos desde consola de navegador, debemos utilizar la
+palabra "document." y luego seguiria la sentencia o funcion a utilizar.
+
+-querySelector    = me permite recuperar el primer elemento que encuentre. para buscar 
+		    elementos segun ID utilizar antes de mencionar la ID el #. y si busca por clases
+		    debe utilizar un . antes del nombre.
+-querySelectorAll = me regresara todos los elementos que cumplan con la condicion. Y creara una List 
+		    con los elementos.
+-innerText = ingresar sentencias especificas. No permite ingresar sentencias html.
+-innerHTML = sirve para agregar o cambiar por sentencias de html.
+-getElementById = sirve para obtener elementos segun su ID.
+-getElementByClassName = sirve para obtener elementos segun el nombre de la class.
+
+En caso de necesitar modificar una variable o sentencia mas de una vez, esto es mejor pasarlo a una variable
+esto de la siguiente forma: 'const titulo = document.querySelector('.titulo');'. De esta manera cuando
+necesitemos realizar cambios en titulo nuevamente solo llamariamos la variable y comenzariamos a modificar.
+
+			Creacion de elementos mediante el DOM.
+-createElement = crear elementos. Lo idea es meter esta creacion dentro de una variable para poder
+		 trabajarlo.
+Luego de haber metido el div a modificar en una variable se ocupa la siguiente sentencia para agregar elementos
+a esta etiqueta:
+
+-append(variableCreacionNew) = sirve para ingresar un elemento dentro de una etiqueta html.
+-classList = muestra el listado de clases de la variable o elemento encontrado.
+-classList.add = agrega configuraciones para la clase. Hay que añadir una a una(en este caso 
+		 añadimos elementos de bootstrap).
+-body = hace referencia a todo el body, de igual manera se podria ocupar el querySelector y llamar
+	la etiqueta.
+-placeHolder = texto de vista previa en input.
+
